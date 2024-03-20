@@ -20,12 +20,14 @@ const MyBooking = () => {
     }
 
     const filterUserBooking=(type)=>{
-        const result=bookingList.filter(item=>
-            type=='upcoming' ? new Date(item.attributes.Date)>= new Date(): new Date(item.attributes.Date)<=new Date()
-            )
-            console.log(result)
+        const result=bookingList.filter(item=> {
+          return type=='upcoming' ? new Date(item.attributes.Date)>= new Date(): new Date(item.attributes.Date)<new Date()
+       
+        })
+            // console.log(",,,,,,,,,,,,,,,,,",result);
             return result;
     }
+
   return (
     <div className="px-4 sm:px-10 mt-10">
       <h2 className="font-bold text-2xl">My Booking</h2>

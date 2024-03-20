@@ -18,7 +18,7 @@ const getDoctorByCategory = (category) =>
 const getDoctorById = (id) =>
   axiosClient.get("/products/" + id + "?populate=*");
 const bookAppointment = (data) => axiosClient.post("/appointments", data);
-const getUserBookingList =(userEmail)=>axios.get("/appointments?[filters][Email][$eq]="+userEmail+"&populate[doctor][image][populate][0]=url&populate=*");
+const getUserBookingList =(userEmail)=>axiosClient.get("/appointments?filters[Email][$eq]="+userEmail+"&populate[doctor][image][populate][0]=url&populate=*");
 const deleteBooking=(id)=>axiosClient.delete('/appointments/'+id);
 
 const sendEmail =(data)=>axios.post('/api/sendEmail',data);

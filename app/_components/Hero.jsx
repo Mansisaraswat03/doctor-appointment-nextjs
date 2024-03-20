@@ -18,6 +18,7 @@ const Hero = () => {
           </div>
 
           <div className="lg:py-24">
+          <h2 className="text-primary">About Me</h2>
             <h2 className="text-3xl font-bold sm:text-4xl">
               Find & Book <span className="text-primary">Appointment</span> with
               your Fav Doctor
