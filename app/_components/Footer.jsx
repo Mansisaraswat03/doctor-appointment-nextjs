@@ -6,12 +6,12 @@ const Footer = () => {
       <div className="mx-auto justify-center text-center  flex flex-col items-center max-w-7xl px-4 py-8 sm:px-6 lg:px-8">
         <div className="flex items-center">
           <Image src="/logo.png" alt="logo" height={200} width={100} />
-          <label className="font-bold text-primary text-[30px]">Ayushmann</label>
+          <label className="font-bold text-primary text-[30px]">WellNest</label>
         </div>
         <p className="mx-auto mt-2 max-w-md text-center leading-relaxed text-gray-500">
-          Empowering Health, Inspiring Hope: Your Partner in Wellness. Ayushmann
+          Empowering Health, Inspiring Hope: Your Partner in Wellness. WellNest
           - Where Care Meets Compassion. <br />
-         <span className=" font-bold"> "© Ayushmann 2024 </span>. All rights reserved. | We are committed to
+         <span className=" font-bold"> "© WellNest 2024 </span>. All rights reserved. | We are committed to
           providing compassionate care and medical excellence.
         </p>
 

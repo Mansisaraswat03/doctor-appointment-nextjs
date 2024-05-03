@@ -25,12 +25,12 @@ const BookingList = ({bookingList,expired,updateRecord}) => {
     <div>
       {bookingList&&bookingList.map((item,index)=>(
         <div className='flex gap-4 items-center border p-3 m-3 rounded-lg'>
-            <Image src={item.attributes?.doctor?.data?.attributes?.image?.data?.attributes?.url}
+            {/* <Image src={item.attributes?.doctor?.data?.attributes?.image?.data?.attributes?.url}
                 className='rounded-full h-[70px] w-[70px] object-cover'
                 alt='doctor'
                 width={70}
                 height={70}
-            />
+            /> */}
             <div className='flex flex-col gap-2 w-full'>
                 <h2 className='font-bold text-[18px] flex justify-between items-center'>{item.attributes.doctor?.data?.attributes?.Name}
                 {!expired&&<CancelAppointment onContinueClick={()=>onDeleteBooking(item)}/>}</h2>
